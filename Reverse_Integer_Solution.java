@@ -21,7 +21,7 @@ import java.util.Arrays;
 import java.util.ArrayList;
 import java.io.*;
 
-public class Solution {
+public class Reverse_Integer_Solution {
 
     public int reverse(int x) {
 
@@ -136,7 +136,7 @@ public class Solution {
     public static void main(String[] args){
 
 
-        Solution slt = new Solution();
+        Reverse_Integer_Solution slt = new Reverse_Integer_Solution();
 
         try{
             number = input.nextInt();
