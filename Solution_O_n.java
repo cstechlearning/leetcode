@@ -12,7 +12,7 @@ class Solution_O_n {
     public int[] twoSum(int[] nums, int target){
         Map<Integer, Integer> map = new HashMap<>();
         for(int i=0; i<nums.length; i++)
-    //    X map.add(nums[i], i); // key, entry   X Arraylist, list.add(1), but map, it's map.put(1,1)
+        //  list.add(1); in Arraylist, but in map, it's map.put(1,1)
             map.put(nums[i], i);
 
         for(int i=0; i<nums.length; i++){
@@ -31,7 +31,7 @@ class Solution_O_n {
     }
 }
 
-/*Time complexity: O(n)+O(1)(HashMap) = O(n)
-  Space complexity : O(n)  because extra space need hashMap, length is n elements -> O(n)
+/* Time complexity:   O(n)+O(1)(HashMap) = O(n)
+   Space complexity : O(n)  because extra space need hashMap, length is n elements -> O(n)
 */
 
