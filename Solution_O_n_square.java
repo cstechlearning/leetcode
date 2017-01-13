@@ -26,7 +26,7 @@ class Solution_O_n_square {
     }
 }
 
-/*Time complexity: O(n^2)
-  Space complexity : O(1)  because no extra space need 
+/* Time complexity:   O(n^2)
+   Space complexity : O(1)  because no extra space need 
 */
 
