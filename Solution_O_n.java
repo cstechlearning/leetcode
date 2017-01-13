@@ -12,7 +12,7 @@ class Solution_O_n {
     public int[] twoSum(int[] nums, int target){
         Map<Integer, Integer> map = new HashMap<>();
         for(int i=0; i<nums.length; i++)
-    //    X map.add(nums[i], i); // key, entry   X Arraylist list, list.add(1), but map, it's map.put(1,1)
+    //    X map.add(nums[i], i); // key, entry   X Arraylist, list.add(1), but map, it's map.put(1,1)
             map.put(nums[i], i);
 
         for(int i=0; i<nums.length; i++){
@@ -20,17 +20,7 @@ class Solution_O_n {
             if(map.containsKey(j) && j!=nums[i])  // [7]
                 return new int[]{i, map.get(j)}; // 0, map.get(7)->1
         }
-
-
-
-
-
-
-
-
-        
-        
-        throw new IllegalArgumentException("No such solution in two sum! ");
+        throw new IllegalArgumentException("No such solution in two sum ");
     }
 
     public static void main(String args[]){
