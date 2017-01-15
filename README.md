@@ -1,5 +1,5 @@
 # leetcode
-solutions of leetcode question
+solution
 
 created by Pengyang Wu
 July 2, 2016
