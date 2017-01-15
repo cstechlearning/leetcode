@@ -12,7 +12,6 @@ class Solution_O_n {
     public int[] twoSum(int[] nums, int target){
         Map<Integer, Integer> map = new HashMap<>();
         for(int i=0; i<nums.length; i++)
-        //  list.add(1); in Arraylist, but in map, it's map.put(1,1)
             map.put(nums[i], i);
 
         for(int i=0; i<nums.length; i++){
