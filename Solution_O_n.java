@@ -8,7 +8,7 @@ return [0, 1].*/
 import java.util.*;
 
 class Solution_O_n {
-
+    
     public int[] twoSum(int[] nums, int target){
         Map<Integer, Integer> map = new HashMap<>();
         for(int i=0; i<nums.length; i++)
@@ -24,7 +24,7 @@ class Solution_O_n {
 
     public static void main(String args[]){
         Solution_O slt = new Solution_O();
-
+        
         for(int x: slt.twoSum(new int[]{2,7,11,15}, 13)) 
             System.out.println(x);
     }
@@ -33,4 +33,3 @@ class Solution_O_n {
 /* Time complexity:   O(n)+O(1)(HashMap) = O(n)
    Space complexity : O(n)  because extra space need hashMap, length is n elements -> O(n)
 */
-
