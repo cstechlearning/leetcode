@@ -2,7 +2,7 @@
 You may assume that each input would have exactly one solution.
 E.g:
 Given nums = [2, 7, 11, 15], target = 9, // 0 1 2 3
-Because nums[0] + nums[1] = 2 + 7 = 9,   //   1 2 3    5    10
+Because nums[0] + nums[1] = 2 + 7 = 9,   // 0 1
 return [0, 1].*/
 
 import java.util.*;
