@@ -9,7 +9,6 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -19,8 +18,7 @@ public class Solution {
 	public int getMinimumDifference(TreeNode root) {
 		// pre
 		if(root==null)   // null, it will return, so no worry getMini() needs if(r.left=!null)
-			return Collections.min( diff );
-			
+			return Collections.min( diff );		
 		else{
 			if(root.left!=null){
 				diff.add( Math.abs(root.val - root.left.val) );
