@@ -1,3 +1,5 @@
+// find the minimum absolute difference between values of two "any" nodes.
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,11 +15,10 @@ import java.util.Collections;
 import java.util.Arrays;
 
 public class Solution {
-	private ArrayList<Integer> vals = new ArrayList<>();
+    private ArrayList<Integer> vals = new ArrayList<>();
 	
     public int getMinimumDifference(TreeNode root) {
     	getVals(root);
-    
     	return getMin();
     }
 
@@ -26,7 +27,7 @@ public class Solution {
     		return;
     	} else {
     		vals.add(root.val);
-
+		
     		getVals( root.left  );
     		getVals( root.right );
     	}
@@ -35,17 +36,14 @@ public class Solution {
 
     public int getMin(){
     	int[] diff = new int[vals.size()-1];
-
     	Collections.sort(vals);
-
+	    
     	for(int i=0; i<vals.size()-1; i++){
-    		diff[i] =  Math.abs( vals.get(i+1) - vals.get(i) );
+    	       diff[i] =  Math.abs( vals.get(i+1) - vals.get(i) );
     	}
-
+	    
     	Arrays.sort(diff);
-
     	return diff[0];
-
 
     }
 
