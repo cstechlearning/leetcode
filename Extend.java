@@ -1,16 +1,10 @@
-//
-//
-
 class Subclass{
-
 	public void implementMe(){
 
 	} 
-
 }
 
 public class Extend extends Subclass{
-
 	@Override
 	public void implementMe(){
 		System.out.println("Yea! I have Overrided by extend!!! @");
@@ -18,10 +12,10 @@ public class Extend extends Subclass{
 
 
    public static void main(String[] args){
-   	    Extend et = new Extend();
-   	    et.implementMe();
+	   
+   	Extend et = new Extend();
+   	et.implementMe();
    	    
-
    }
 }
 
