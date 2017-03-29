@@ -1,12 +1,7 @@
-//
-//
-
 class Subclass{
-
 	public void implementMe(){
-
+		
 	} 
-
 }
 
 public class Extend extends Subclass{
@@ -18,10 +13,10 @@ public class Extend extends Subclass{
 
 
    public static void main(String[] args){
+	   
    	    Extend et = new Extend();
-   	    et.implementMe();
-   	    
-
+   	    et.implementMe();	    
+	   
    }
 }
 
