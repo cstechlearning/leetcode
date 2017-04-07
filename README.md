@@ -26,6 +26,7 @@ What are implement and extends keywords extends is for extending a class
 implements is for implementing an interface What is static keyword
 means only one copy of the method/variable shared between all instances.
 
+```markdown
 <code>
            public class MyClass {
                public static int myVariable = 0;
