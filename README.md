@@ -1,5 +1,5 @@
 ## Quick OO & Data Structure Review
-==================================
+-------------------------------------------
 ## ￼￼Basic Java
 
 #Bit Manipulation?
@@ -176,7 +176,9 @@ public int isEmpty() {
 What is generic types & type variable?
 Generic type: when implementing some classes, the variable we passed in cannot be certain, they can be Integer, Character... In order to write once and fit for all types, use type variable <T> to represent all types
 type variable: <T>
-���� data structure �� unique element �� insert order�� insert � delete �� function
+
+
+Design data structure with unique element & insert order. Implement insert, delete two function
 Sort algorithms (Java's sort method?)
 ￼￼￼￼￼￼￼￼
 ￼￼Beginning with version 7, Oracle's Java implementation is using Timsort for object arrays bigger than 10 elements, and Insertion sort for arrays with less than that number of elements. The same considerations apply for
