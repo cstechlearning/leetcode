@@ -1,8 +1,8 @@
-## Quick OO & Data Structure Review
+# Quick OO & Data Structure Review
 -------------------------------------------
 ## ￼￼Basic Java
 
-# Bit Manipulation?
+## Bit Manipulation?
 
 <code> my_byte = my_byte | (1 << pos); </code>
 
