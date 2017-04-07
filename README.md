@@ -2,8 +2,10 @@
 -------------------------------------------
 ## ￼￼Basic Java
 
-#Bit Manipulation?
-          my_byte = my_byte | (1 << pos);
+# Bit Manipulation?
+
+<code> my_byte = my_byte | (1 << pos); </code>
+
 What is the difference between ArrayList and LinkedList?
 LinkedList and ArrayList are two different implementations of the List interface.
 LinkedList implements it with a doubly-linked list. ArrayList implements it with a dynamically re-sizing array.
