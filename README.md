@@ -27,8 +27,7 @@ What are implement and extends keywords extends is for extending a class
 implements is for implementing an interface What is static keyword
 means only one copy of the method/variable shared between all instances.
 
-```markdown
-<code>
+
            public class MyClass {
                public static int myVariable = 0;
 }
@@ -37,7 +36,7 @@ means only one copy of the method/variable shared between all instances.
            MyClass instance1 = new MyClass();
            MyClass instance2 = new MyClass();
            MyClass.myVariable = 5;  //This change is reflected in both instances
-</code>
+
 
 What is heap tree?
 Heap is a tree structure, it's a complete tree: which means totally filled other than the
@@ -174,7 +173,6 @@ public int isEmpty() {
 } 
 }
 
-</code>
 
 
 What is generic types & type variable?
@@ -200,7 +198,12 @@ average: o(n^2) best: o(n)
 ￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼
 ￼￼￼Why still useing insertion sort under 10?
 Because big-O is only how computation changes over time, it's not the exact number. insertion sort is really O(1/2 n^2).
-Leetcodes
+
+
+
+**Leetcodes**
+
+
 LC101 Symmetric Tree
 https://leetcode.com/problems/symmetric-tree/
 Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
@@ -259,6 +262,10 @@ public class Solution {
         return true;
     }
 }
+
+
+
+
 ￼￼￼LC387 First Unique Character in a String
 Given a string, find the first non-repeating character in it and return it's index. If it doesn't exist, return -1.
 Examples:
@@ -299,6 +306,11 @@ Given an array where elements are sorted in ascending order, convert it to a hei
           thisNode.right = pickMid(nums, mid + 1, last);
           return thisNode;
 } }
+
+
+
+
+
 Two Sum
 Given an array of integers, return indices of the two numbers such that they add up to a specific
 target.
@@ -350,6 +362,9 @@ given 2 arrays, find the values of elements that sum to be target
       else if(arr1[i] + arr2[j] > target) j--;
       else return new int[]{arr1[i], arr2[j]};
 } }
+
+
+
 3Sum
 Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
 Note: The solution set must not contain duplicate triplets.
@@ -385,6 +400,9 @@ public class Solution {
 }
 return res; }
 }
+
+
+
 LC236 Lowest Common Ancestor of a Binary Tree
 Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
 According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w as descendants (where we allow a node to be a descendant of itself).”
@@ -436,6 +454,9 @@ if(left != null && right != null) return root;
 if(left == null && right != null) return right;
 if(left != null && right == null) return left;
 return null;
+
+
+
 Find Single Number
 given an array of integers, return the only integer which only occurs once, others are in pairs. Return invalid if there are no such integers.
 // HASHSET
@@ -503,6 +524,9 @@ Use string to calculate when the number is extremely big.
 }
   // Integer.toString(number)
   // String.valueOf(number)
+  
+  
+  
 Roman to Integer
 ￼￼￼  public class Solution {
       public int romanToInt(String s) {
@@ -527,6 +551,9 @@ res += curr; }
 }
 return res; }
 }
+
+
+
 FizzBuzz
 Write a program that outputs the string representation of numbers from 1 to n.
 But for multiples of three it should output “Fizz” instead of the number and for the multiples of five output “Buzz”. For numbers which are multiples of both three and five output “FizzBuzz”.
@@ -571,6 +598,9 @@ buzz = 0;
 }
 return lt; }
 }
+
+
+
 Intersection of Two Linked Lists
 Write a program to find the node at which the intersection of two singly linked lists begins. For example, the following two linked lists:
 A: a1 ! a2 ↘
