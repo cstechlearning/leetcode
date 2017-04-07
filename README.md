@@ -2,9 +2,10 @@
 -------------------------------------------
 ## ￼￼Basic Java
 
-## Bit Manipulation?
+```markdown
+Bit Manipulation?
 
-<code> my_byte = my_byte | (1 << pos); </code>
+my_byte = my_byte | (1 << pos); 
 
 What is the difference between ArrayList and LinkedList?
 LinkedList and ArrayList are two different implementations of the List interface.
