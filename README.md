@@ -1,6 +1,7 @@
 # Quick OO & Data Structure Review
 -------------------------------------------
 ## ￼￼Basic Java
+ <img src="img/sort_time.png" width="70%"/>
 
 ```markdown
 `Bit Manipulation?`
@@ -80,12 +81,6 @@ GC (Garbage Collection):?
 `What does java uses for sort?`
 For primitive type: quick sort
 For objects: use merge sort! //  E.g Arrays.sort(int_arr);  here use the merge sort, so time complexity is O(nlogn)
-
- <img src="img/sort_time.png" width="70%"/>
-
-
-
-
 
 
 
