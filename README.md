@@ -3,7 +3,7 @@
 ## ￼￼Basic Java
 
 ```markdown
-Bit Manipulation?
+``Bit Manipulation?``
 
 my_byte = my_byte | (1 << pos); 
 
