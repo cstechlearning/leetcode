@@ -79,13 +79,16 @@ GC (Garbage Collection):?
 
 `What does java uses for sort?`
 For primitive type: quick sort
-For objects: use merge sort!!! //  E.g   Arrays.sort(int_arr); here use the merge sort, so time complexity is O(nlogn)
+For objects: use merge sort! //  E.g Arrays.sort(int_arr);  here use the merge sort, so time complexity is O(nlogn)
 
 
 
 
 
-Why different? For quick sort, even the value is the same, there might be exchange among these items, for primitive, it's OK but for reference types, it causes problem; Why not use merge sort for primitive? because merge sort requires making a clone of the array, for objects, the references takes only little memory, but for primitive types, the memory cost doubles.
+
+
+`Why different?`
+For quick sort, even the value is the same, there might be exchange among these items, for primitive, it's OK but for reference types, it causes problem; Why not use merge sort for primitive? because merge sort requires making a clone of the array, for objects, the references takes only little memory, but for primitive types, the memory cost doubles.
 
 
 Arrays.sort descend:  
@@ -96,7 +99,7 @@ Stack: LIFO(last in first out)
 Methods: pop(), push(), peek(), isEmpty()
 ￼￼￼￼￼￼￼￼￼￼￼
 <code>
-￼￼//USE ARRAY TO IMPLEMENT STACK
+`￼￼//USE ARRAY TO IMPLEMENT STACK`
 public class MyStack<T> {
   // constructor
   public MyStack<T>() {
@@ -128,7 +131,7 @@ top++;
     return false;
 } }
 ￼
-￼￼//USE QUEUE TO IMPLEMENT STACK, o(n) insert and o(1) remove
+￼￼`//USE QUEUE TO IMPLEMENT STACK, o(n) insert and o(1) remove`
 Queue<Integer> qu = new LinkedList<Integer>();
 public void push(int x) {
   qu.add(x);
@@ -180,12 +183,12 @@ public int isEmpty() {
 
 
 
-What is generic types & type variable?
+`What is generic types & type variable?`
 Generic type: when implementing some classes, the variable we passed in cannot be certain, they can be Integer, Character... In order to write once and fit for all types, use type variable <T> to represent all types
 type variable: <T>
 
 
-Design data structure with unique element & insert order. Implement insert, delete two function
+`Design data structure with unique element & insert order. Implement insert, delete two function`
 Sort algorithms (Java's sort method?)
 ￼￼￼￼￼￼￼￼
 ￼￼Beginning with version 7, Oracle's Java implementation is using Timsort for object arrays bigger than 10 elements, and Insertion sort for arrays with less than that number of elements. The same considerations apply for
@@ -209,7 +212,7 @@ Because big-O is only how computation changes over time, it's not the exact numb
 **Leetcodes**
 
 
-LC101 Symmetric Tree
+`LC101 Symmetric Tree`
 https://leetcode.com/problems/symmetric-tree/
 Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
 For example, this binary tree [1,2,2,3,4,4,3] is symmetric:
@@ -316,7 +319,7 @@ Given an array where elements are sorted in ascending order, convert it to a hei
 
 
 
-Two Sum
+`Two Sum`
 Given an array of integers, return indices of the two numbers such that they add up to a specific
 target.
 You may assume that each input would have exactly one solution, and you may not use
@@ -370,7 +373,7 @@ given 2 arrays, find the values of elements that sum to be target
 
 
 
-3Sum
+`3Sum`
 Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
 Note: The solution set must not contain duplicate triplets.
 For example, given array S = [-1, 0, 1, 2, -1, -4],
@@ -408,7 +411,7 @@ return res; }
 
 
 
-LC236 Lowest Common Ancestor of a Binary Tree
+`LC236 Lowest Common Ancestor of a Binary Tree`
 Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
 According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w as descendants (where we allow a node to be a descendant of itself).”
 _______3______ /\ ___5__ ___1__ /\/\
@@ -462,7 +465,7 @@ return null;
 
 
 
-Find Single Number
+`Find Single Number`
 given an array of integers, return the only integer which only occurs once, others are in pairs. Return invalid if there are no such integers.
 // HASHSET
   public class Solution {
@@ -532,7 +535,7 @@ Use string to calculate when the number is extremely big.
   
   
   
-Roman to Integer
+`Roman to Integer`
 ￼￼￼  public class Solution {
       public int romanToInt(String s) {
           int sLen = s.length();
@@ -559,7 +562,7 @@ return res; }
 
 
 
-FizzBuzz
+`FizzBuzz`
 Write a program that outputs the string representation of numbers from 1 to n.
 But for multiples of three it should output “Fizz” instead of the number and for the multiples of five output “Buzz”. For numbers which are multiples of both three and five output “FizzBuzz”.
 ￼￼￼// USE %
@@ -606,7 +609,7 @@ return lt; }
 
 
 
-Intersection of Two Linked Lists
+`Intersection of Two Linked Lists`
 Write a program to find the node at which the intersection of two singly linked lists begins. For example, the following two linked lists:
 A: a1 ! a2 ↘
 c1 ! c2 ! c3 �
@@ -658,7 +661,9 @@ ALen--; }
           return iterA;
       }
 }
-OOD: Package
+
+`OOD: Package` -- Object-oriented Design   ||  System Design
+
 Two types of packages, implement: getPackageA(), getPackageB(), getAnyPackage(), addPackageA(), addPackageB()
 FIFO
 ￼￼  public class PackageNode {
@@ -783,7 +788,8 @@ return its level order traversal as:
           return wrapList;
       }
 }
-Kth Largest Element in an Array
+
+`Kth Largest Element in an Array`
 Find the kth largest element in an unsorted array. Note that it is the kth largest element in the
 sorted order, not the kth distinct element.
 For example,
@@ -840,7 +846,7 @@ Answer: 1
   00011
 Answer: 3
 ￼￼
-￼￼// DFS
+`￼￼// DFS`
 public class Solution {
     // BFS method
     public void DFS(char[][] grid, int m, int n) {
@@ -883,7 +889,7 @@ Example 2:
 [2,2,1] ]
 Return 4
 ￼￼￼￼
-￼￼// DFS
+`￼￼// DFS`
 public class Solution {
     public int longestIncreasingPath(int[][] matrix) {
         if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
