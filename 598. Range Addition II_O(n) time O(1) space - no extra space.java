@@ -1,9 +1,7 @@
 /* 598. Range Addition II
 
 Given an m * n matrix M initialized with all 0's and several update operations.
-
 Operations are represented by a 2D array, and each operation is represented by an array with two positive integers a and b, which means M[i][j] should be added by one for all 0 <= i < a and 0 <= j < b.
-
 You need to count and return the number of maximum integers in the matrix after performing all the operations.
 
 Example 1:
@@ -75,6 +73,10 @@ public class Solution {
 
         // time:  O(n), n is number of ops
         // space: O(1), no extra space. Nice!
+ 
+        // Need to notice:
+        // meet the requirement: no extra space 
+        // use pass-in var m,n to store min instead of assigning new var
 
 
 
