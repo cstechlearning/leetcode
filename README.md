@@ -3,27 +3,27 @@
 ## ￼￼Basic Java
 
 ```markdown
-'Bit Manipulation?'
+`Bit Manipulation?`
 
 my_byte = my_byte | (1 << pos); 
 
-What is the difference between ArrayList and LinkedList?
+`What is the difference between ArrayList and LinkedList?`
 LinkedList and ArrayList are two different implementations of the List interface.
 LinkedList implements it with a doubly-linked list. ArrayList implements it with a dynamically re-sizing array.
 
 
-What is interface?
+`What is interface?`
 Interface is a group of methods that classes must implement. When implementing interface, all methods should be developed to successfully compile.
 
 
-What is final keyword?
+`What is final keyword?`
 final means cannot be changed.
 final class: cannot be subclassed, all methods in a final class are final
 final method: cannot overridden by subclasses
 final variable: can only be initialized once, its value cannot be changed after initialize
 
 
-What are implement and extends keywords extends is for extending a class
+`What are implement and extends keywords extends is for extending a class`
 implements is for implementing an interface What is static keyword
 means only one copy of the method/variable shared between all instances.
 
@@ -38,46 +38,51 @@ means only one copy of the method/variable shared between all instances.
            MyClass.myVariable = 5;  //This change is reflected in both instances
 
 
-What is heap tree?
+`What is heap tree?`
 Heap is a tree structure, it's a complete tree: which means totally filled other than the
 ￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼
 ￼rightmost leaf node can be empty. Heap can be divided as min-heap, and max-heap, for max-heap, the parent node is bigger than any of its child nodes.
 
 
-What is heap can do but stack cannot do?
+`What is heap can do but stack cannot do?`
 All Java objects are dynamically allocated.
 <code> ClassA obj = new ClassA(); </code> the object is allocated on the heap and 
 a reference to it is stored on the stack Compare between stack and heap
 
-Stack is the memory set apart as spaces for a thread of execution. Stack frames are created in stack for functions. 
+`Stack is the memory set apart as spaces for a thread of execution.` Stack frames are created in stack for functions. 
 It obeys LIFO: last in first out.
 
-Heap is memory that dynamically located. No enforced pattern for allocating / deallocating from the heap.
+`Heap is memory that dynamically located.` No enforced pattern for allocating / deallocating from the heap.
 Usually each thread get a stack but only one heap overall. Scope:
 Stack created and ended when thread create / end Heap created and ended when appication create / end
+
+`which is slower?`
 Heap is slower than stack because stack's size is fixed when created and LIFO is simple. Heap is slow because dynamic allocation and synchronized to ensure multi-thread safe as it's a global accessble.
 
 
-How to implement Hashmap?
+`How to implement Hashmap?`
 HashMap maintains an array of buckets. Each bucket is a linkedlist of key value pairs encapsulated as Entry objects
 This array of buckets is called table. Each node of the linked list is an instance of a private class called Entry. An entry is a private static class inside HashMap which implements Map.Entry
 
 
-How to solve collision in Hashmap?
+`How to solve collision in Hashmap?`
 One of the solution is: Chaining collision resolution. Collision happens when two keys are mapped to the same bucket in HashMap. In an HashMap the key is an object, that contains hashCode() and equals(Object) methods. Two process: one is use hashCode() method to get the bucket number, then if the bucket already exists keys, it will use equals method to judge if the new key is the same with already existed ones, if yes, replace, if no, add a new entry to the linked list
 Difference between Hashmap & Hashset & Hashtable
 HashSet: does not allow duplicate values, has add method / contains method HashMap & HashTable: are for saving key-value pairs.
 HashTable does not allow null for key / value - HashMap allows null
 HashTable is synchronized, only one thread can access in one time, so it's thread safe, but slow - HashMap is NOT sychronized, fast, but not thread safe
 ￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼
-￼HashMap resize?
+`￼HashMap resize?`
 ￼Size: 15, load factor: 0.75, when the buckets number that used is larger than size*loadFactor, the hashMap will expand to double size and recalculate all hashCode for every key already exists in the hashMap.
 GC (Garbage Collection):? 
 
 
-What does java uses for sort?
+`What does java uses for sort?`
 For primitive type: quick sort
-For objects: use merge sort
+For objects: use merge sort!!! //  E.g   Arrays.sort(int_arr); here use the merge sort, so time complexity is O(nlogn)
+
+
+
 
 
 Why different? For quick sort, even the value is the same, there might be exchange among these items, for primitive, it's OK but for reference types, it causes problem; Why not use merge sort for primitive? because merge sort requires making a clone of the array, for objects, the references takes only little memory, but for primitive types, the memory cost doubles.
