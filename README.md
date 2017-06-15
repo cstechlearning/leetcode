@@ -1,6 +1,7 @@
 # Quick OO & Data Structure Review
 -------------------------------------------
 ## ￼￼Basic Java
+ <img src="img/pre_post_in_order.png" width="80%"/>
  <img src="img/sort_time.jpeg" width="80%"/>
 
 ```markdown
