@@ -1,7 +1,7 @@
 # Quick OO & Data Structure Review
 -------------------------------------------
 ## ￼￼Basic Java
- <img src="img/sort_time.jpeg" width="100%"/>
+ <img src="img/sort_time.jpeg" width="80%"/>
 
 ```markdown
 `Bit Manipulation?`
