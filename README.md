@@ -81,6 +81,9 @@ GC (Garbage Collection):?
 For primitive type: quick sort
 For objects: use merge sort! //  E.g Arrays.sort(int_arr);  here use the merge sort, so time complexity is O(nlogn)
 
+ <img src="img/sort_time.png" width="70%"/>
+
+
 
 
 
